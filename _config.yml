@@ -1,0 +1,34 @@
+title:              ConcenSmart
+email:              info@ockhams.se
+#description:        Accelerating the commercialization of compact particle accelerators with the Blinky-Lite control platform
+author:             Ockham Technologies
+baseurl:            ""
+url:                "https://concensmart.com"
+
+# Social Profiles
+twitter_username:   
+#github_username:    Blinky-Lite
+facebook_username:  
+instagram_username:  
+linkedin_username:  ockham-technologies-ab
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+exclude:
+  - upload.sh
+  - runLocal.sh
+  - jekyll-theme-clean-blog.gemspec
+  - bin
+  - README.md
+  - LICENSE
+  - package-lock.json
+  - package.json
