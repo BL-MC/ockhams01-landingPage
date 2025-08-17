@@ -7,9 +7,39 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="/myapps" target="_blank" data-toggle="tooltip" data-placement="top" title="My Apps">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-toggle-on fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://ntfy.concenSmart.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Notify">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-bell fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://docs.concenSmart.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Documents">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-book fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
           {% if site.email %}
           <li class="list-inline-item">
-            <a href="mailto:{{ site.email | encode_email }}">
+            <a href="mailto:{{ site.email | encode_email }}"  data-toggle="tooltip" data-placement="top" title="Email">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
@@ -17,19 +47,9 @@
             </a>
           </li>
           {% endif %}
-          {% if site.twitter_username %}
-          <li class="list-inline-item">
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
           {% if site.facebook_username %}
           <li class="list-inline-item">
-            <a href="https://www.facebook.com/{{ site.facebook_username }}">
+            <a href="https://www.facebook.com/{{ site.facebook_username }}"  data-toggle="tooltip" data-placement="top" title="Facebook">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -39,7 +59,7 @@
           {% endif %}
           {% if site.linkedin_username %}
           <li class="list-inline-item">
-            <a href="https://www.linkedin.com/company/{{ site.linkedin_username }}">
+            <a href="https://www.linkedin.com/company/{{ site.linkedin_username }}"  data-toggle="tooltip" data-placement="top" title="LinkedIn">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -49,7 +69,7 @@
           {% endif %}
           {% if site.github_username %}
           <li class="list-inline-item">
-            <a href="https://github.com/{{ site.github_username }}">
+            <a href="https://github.com/{{ site.github_username }}" data-toggle="tooltip" data-placement="top" title="Github">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -59,7 +79,7 @@
           {% endif %}
           {% if site.instagram_username %}
           <li class="list-inline-item">
-            <a href="https://instagram.com/{{ site.instagram_username }}">
+            <a href="https://instagram.com/{{ site.instagram_username }}" data-toggle="tooltip" data-placement="top" title="Instagram">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
@@ -68,7 +88,7 @@
           </li>
           {% endif %}
           <li class="list-inline-item">
-            <a href="https://www.ockhams.se/dosify/" target="_blank">
+            <a href="https://www.ockhams.se/dosify/" target="_blank" data-toggle="tooltip" data-placement="top" title="Dosify">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
@@ -76,7 +96,7 @@
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://www.youtube.com/watch?v=ICpND6ajvXg" target="_blank">
+            <a href="https://www.youtube.com/watch?v=ICpND6ajvXg" target="_blank" data-toggle="tooltip" data-placement="top" title="YouTube">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
