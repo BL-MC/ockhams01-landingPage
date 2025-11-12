@@ -40,20 +40,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/myapps?external">External</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Application View</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/myapps?external">External</a>
+            <a class="dropdown-item" href="/myapps">Internal</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">About</a>
+          <div class="dropdown-menu">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modal1">ConcenSmart</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modal2">Dosify</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/myapps">My Apps</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://ntfy.concenSmart.com" target="_blank">Notify</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://wiki.concenSmart.com" target="_blank">Wiki</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://vimeo.com/1112714776?share=copy#t=0" target="_blank">Video</a>
+          <a class="nav-link" href="mailto:info@ockhams.se" target="_blank">Contact</a>
         </li>
       </ul>
     </div>
@@ -101,36 +103,6 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <ul class="list-inline text-center">
-          <li class="list-inline-item">
-            <a href="/myapps" target="_blank" data-toggle="tooltip" data-placement="top" title="My Apps">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-toggle-on fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://ntfy.concenSmart.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Notify">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-bell fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://wiki.concenSmart.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Wiki">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-book fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <ul class="list-inline text-center">
           
           <li class="list-inline-item">
             <a href="mailto:info@ockhams.se"  data-toggle="tooltip" data-placement="top" title="Email">
@@ -154,23 +126,8 @@
           
           
           
-          <li class="list-inline-item">
-            <a href="https://www.ockhams.se/dosify/" target="_blank" data-toggle="tooltip" data-placement="top" title="Dosify">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.youtube.com/watch?v=ICpND6ajvXg" target="_blank" data-toggle="tooltip" data-placement="top" title="YouTube">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
         </ul>
+        <p class="subheading text-center" style="color:#fff;">Powered by <a href="https://bl-mc.com/" target="_blank"  style="color:#fdc100;">Blinky-Lite</a><sup>TM</sup></p>
         <p class="copyright text-muted">Copyright &copy; Ockham Technologies 2025</p>
       </div>
     </div>

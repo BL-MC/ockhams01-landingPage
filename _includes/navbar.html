@@ -8,20 +8,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{{"/myapps?external" | relative_url }}">External</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Application View</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="{{"/myapps?external" | relative_url }}">External</a>
+            <a class="dropdown-item" href="{{"/myapps" | relative_url }}">Internal</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">About</a>
+          <div class="dropdown-menu">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modal1">ConcenSmart</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modal2">Dosify</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{"/myapps" | relative_url }}">My Apps</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://ntfy.concenSmart.com" target="_blank">Notify</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://wiki.concenSmart.com" target="_blank">Wiki</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://vimeo.com/1112714776?share=copy#t=0" target="_blank">Video</a>
+          <a class="nav-link" href="mailto:{{ site.email | encode_email }}" target="_blank">Contact</a>
         </li>
       </ul>
     </div>
