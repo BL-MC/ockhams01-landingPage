@@ -81,19 +81,19 @@
   </header>
 
   <!-- Modal1 -->
-  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" data-backdrop="static" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog  modal-lg modal-dialog-centered" >
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">ConcenSmart</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="stopConcenSmartButton">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <div style="width: 100%; height: 0; padding-bottom: 56%; position: relative;">
             <div style="width: 100%; height: 100%; position: absolute; display: block; top: 0; left: 0;">
-              <iframe width="100%" height="100%" src="https://player.vimeo.com/video/1112714776?dnt=1" frameborder="0" allowfullscreen></iframe> 
+              <iframe class="vvideo" width="100%" height="100%" src="https://player.vimeo.com/video/1112714776?dnt=1" frameborder="0" allowfullscreen></iframe> 
             </div> 
           </div>
         </div>
@@ -102,19 +102,19 @@
   </div>
 
   <!-- Modal2 -->
-  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" data-backdrop="static" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog  modal-lg modal-dialog-centered" >
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Dosify<sup>TM</sup></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="stopDosifyButton">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <div style="width: 100%; height: 0; padding-bottom: 56%; position: relative;">
             <div style="width: 100%; height: 100%; position: absolute; display: block; top: 0; left: 0;">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ICpND6ajvXg?si=d0_bhPr_ZlDY4wdj" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe class="yvideo" width="100%" height="100%" src="https://www.youtube.com/embed/ICpND6ajvXg?si=d0_bhPr_ZlDY4wdj" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div> 
           </div>
         </div>
@@ -170,6 +170,27 @@
 <script src="/assets/scripts.js"></script>
 
 
+
+<script>
+  $('#stopDosifyButton').click(function()
+  {
+    $('.yvideo').each(function()
+    {
+      var el_src = $(this).attr("src");
+      $(this).attr("src",el_src);
+    });
+  });
+  $('#stopConcenSmartButton').click(function()
+  {
+    $('.vvideo').each(function()
+    {
+      var el_src = $(this).attr("src");
+      $(this).attr("src",el_src);
+    });
+  });
+
+
+</script>
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->

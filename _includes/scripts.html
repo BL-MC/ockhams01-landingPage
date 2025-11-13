@@ -82,3 +82,24 @@
     });
   </script>
 {% endif %}
+
+<script>
+  $('#stopDosifyButton').click(function()
+  {
+    $('.yvideo').each(function()
+    {
+      var el_src = $(this).attr("src");
+      $(this).attr("src",el_src);
+    });
+  });
+  $('#stopConcenSmartButton').click(function()
+  {
+    $('.vvideo').each(function()
+    {
+      var el_src = $(this).attr("src");
+      $(this).attr("src",el_src);
+    });
+  });
+
+
+</script>

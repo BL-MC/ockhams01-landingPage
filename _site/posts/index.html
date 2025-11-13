@@ -143,6 +143,27 @@
 
 
 
+<script>
+  $('#stopDosifyButton').click(function()
+  {
+    $('.yvideo').each(function()
+    {
+      var el_src = $(this).attr("src");
+      $(this).attr("src",el_src);
+    });
+  });
+  $('#stopConcenSmartButton').click(function()
+  {
+    $('.vvideo').each(function()
+    {
+      var el_src = $(this).attr("src");
+      $(this).attr("src",el_src);
+    });
+  });
+
+
+</script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
